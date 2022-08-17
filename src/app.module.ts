@@ -5,6 +5,7 @@ import { BooksModule } from './books/books.module';
 import { AuthModule } from './auth/auth.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { SongsModule } from './songs/songs.module';
+import { QueueModule } from './job/queue.module';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { SongsModule } from './songs/songs.module';
     BooksModule,
     AuthModule,
     SongsModule,
+    QueueModule,
   ],
 })
 export class AppModule {}
